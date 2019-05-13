@@ -1,0 +1,23 @@
+<div ng-controller="AddItemController">
+<h2>
+ <a href="">Add New Item</a>
+        </h2>
+		<br>
+
+  <div class="form-group">
+    <label for="email">Id Liste</label><select class="form-control" id="sel1" ng-model="list_id">
+    <option ng-repeat='obj in lists'>{{obj.id}}</option>
+
+	</select>
+  </div>
+  <div class="form-group">
+    <label for="pwd">Title Item:</label>
+    <input type="text" class="form-control" ng-model="title">
+  </div>
+ 
+  <button type="submit" class="btn btn-default" ng-click="validate()">Valider</button>
+
+
+</div>
+
+

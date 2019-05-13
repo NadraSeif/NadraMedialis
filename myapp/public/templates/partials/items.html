@@ -1,0 +1,32 @@
+<!-- Author : Nadra ABIDI -->
+<div ng-controller="ItemController" >
+<h2>Liste des Items </h2>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-9">
+      <div class="table-responsive">
+        <table summary="This table shows how to create responsive tables using Bootstrap's default functionality" class="table table-bordered table-hover">
+          
+          <thead>
+            <tr>
+			  <th>#</th>
+              <th>ID</th>
+              <th>TITLE</th>
+              <th>DATE CREATE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat='obj in items'>
+			  <th><center><button class="btn" ng-click="deleteItem(obj.id)"><i class="fa fa-trash"></i></button></center></th>
+              <td>{{obj.id}}</td>
+              <td>{{obj.title}}</td>
+              <td>{{obj.date_create}}</td>
+            </tr>
+          </tbody>
+         
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

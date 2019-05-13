@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>App-List-Item</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="templates/bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="templates/assets/home.css"/>
+</head>
+
+<body>
+
+<header class="header-section">
+    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand nav-text" href="#">My Application</span></a>
+        </div>
+        <div class="collapse navbar-collapse navbar-main-collapse pull-right">
+            <ul class="nav navbar-nav nav-section">
+                <li ng-class="{active:nav.tab('navigation')}"><a class="nav-text" href="#/home">Get List</a></li>
+                <li class=""><a class="nav-text" href="#/addList">Add new List</a></li>
+                <li ng-class="{active:nav.tab('navigation')}"><a class="nav-text" href="#/items">Get Item</a></li>
+				<li ng-class="{active:nav.tab('navigation')}"><a class="nav-text" href="#/test">Add new Item</a></li>
+            </ul>
+            
+        </div>
+    </nav>
+</header>
+<div class="banner"><img src="templates/assets/scss/blog-banner1.jpg"></div>
+<div id="main" class="main-container">
+
+    <div ng-view></div>
+
+</div>
+
+<footer>
+    <nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+        <small>
+            <center><span class="navbar-text">PHP5 API &  AngularJS app <a href="">@Nadra ABIDI</span></center>
+        </small>
+    </nav>
+</footer>
+<script src="templates/bower_components/angular/angular.js"></script>
+<script src="templates/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="templates/bower_components/angular-resource/angular-resource.js"></script>
+<script src="templates/bower_components/angular-route/angular-route.min.js"></script>
+<script type="text/javascript" src="templates/app/app.js"></script>
+<script type="text/javascript" src="templates/app/HomeController.js"></script>
+<script type="text/javascript" src="templates/app/services.js"></script>
+<script type="text/javascript" src="templates/app/filters.js"></script>
+<script type="text/javascript" src="templates/app/directives.js"></script>
+</body>
+</html>

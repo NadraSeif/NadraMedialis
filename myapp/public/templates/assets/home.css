@@ -1,0 +1,168 @@
+html {
+    height: 100%;
+}
+html body {
+    height: 100%;
+    overflow: hidden;
+    background: #f1f1f1;
+}
+.banner img{
+    width: 100%;
+    height: 25%;
+}
+/*html body .container-fluid.body-content {*/
+    /*position: absolute;*/
+    /*top: 50px;*/
+    /*bottom: 30px;*/
+    /*right: 0;*/
+    /*left: 0;*/
+    /*overflow-y: auto;*/
+/*}*/
+
+.nav-text{
+    font-size: 15px;
+    font-weight: 500;
+    color: powderblue !important;
+    padding-right: 25px;
+}
+
+li a .nav-text:hover{
+    color:floralwhite;
+}
+
+.glyphicon-user{
+    font-size: 20px;
+    padding-top: 15px;
+    color: powderblue !important;
+}
+
+
+.post-grid{
+    cursor:pointer;
+    transition: background linear 0.5s;
+
+}
+
+/*.row .post-grid:hover {*/
+    /*background: #79B9D2;*/
+    /*color:white;*/
+
+/*}*/
+
+/*
+ login page
+*/
+.login-panel{
+    margin-top: 10%;
+    border: 3px solid #f1f1f1;
+    padding-left: 10%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    width: 50%;
+    margin-left: 20%;
+}
+
+.login-panel .form-control{
+
+    width:60%
+
+}
+
+.add-post{
+    margin-bottom: 5%;
+}
+.add-post form {
+    width:100%;
+}
+
+.add-post input, textarea {
+    display:block;
+    width:100%;
+    padding:10px;
+    font-size:1.1em;
+}
+
+.main-container {
+    background: #fff;
+    position: absolute;
+    top: 30px;
+    bottom: 30px;
+    right: 0;
+    left: 0;
+    overflow-y: auto;
+    padding-right: 25px;
+    padding-left: 35px;
+    padding-top: 10px;
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-top: 5%;
+
+}
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #4C4;
+    height: 50px;
+}
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #4C4;
+    height: 30px;
+}
+
+.detailBox{
+    margin-bottom: 50px;
+}
+
+.comment-block{
+
+    margin-bottom:5%;
+}
+
+.bottom-section{
+    margin-top: 2%;
+    margin-bottom: 5%;
+    width: 30%;
+    float: left;
+    padding-left: 10px;
+}
+
+.paragraph-content {
+    word-break: break-all;
+}
+.post-grid{
+    width: 100%;
+    max-height: 10%;
+}
+
+.commentList li{
+    list-style: none;
+}
+.commenterImage{
+    margin-bottom: 5px;
+}
+.author-name{
+    padding-left: 15px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #656c7a
+}
+.date {
+    color: #656c7a;
+    font-size: 11px;
+    font-weight: 300;
+    padding-left: 15px;
+}
+.commentText{
+    padding-left: 35px;
+    margin-bottom: 5px;
+    font-family: Georgia,Times,serif;
+}
+.posts-data{
+    margin-bottom: 20px;
+}
