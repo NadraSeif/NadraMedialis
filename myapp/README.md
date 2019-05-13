@@ -1,29 +1,36 @@
-# SlimApp RESTful API
+# todoList RESTful API
 
-This is a RESTful api built with the SlimPHP framework and uses MySQL for storage.
-
-### Version
-1.0.0
-
-### Usage
-
+Il s'agit d'une API RESTful construite avec PHP5 et qui utilise MySQL BD.
 
 ### Installation
 
-Create database or import from _sql/slimapp.sql
+Créer une base de données =>  	ma_base/todolist.sql
 
-Edit db/config params
+Installer les dépendances PHP5
 
-Install SlimPHP and dependencies
-
-```sh
 $ composer
-```
-### API Endpints
+
+Installer les dépendances Angular js 
+
+ npm install : node_modules et bower install:bower_components
+
+### API URL
 ```sh
-$ GET /api/customers
-$ GET /api/customer/{id}
-$ POST /api/customer/add
-$ PUT /api/customer/update/{id}
-$ DELETE /api/customer/delete/{id}
+    List : 
+
+        GET: /api/list/{id} & /api/lists
+        POST: /api/list/add
+        DELETE: /api/list/delete
+
+    Item : 
+
+        GET: /api/item/{id} & /api/items
+        POST: /api/item/add
+        DELETE:/api/item/delete
+
+```
+###  URL Appli
+```sh
+    http://localhost/myapp/public 
+
 ```
